@@ -1,0 +1,19 @@
+npm i -g @nestjs/cli
+
+nest new nest-mongo-prisma
+
+npm install @nestjs/config @prisma/client prisma
+
+npx prisma init
+
+npx prisma generate
+
+npx prisma db push
+
+nest generate resource user
+
+nest generate module auth
+nest generate controller auth
+nest generate service auth
+
+npm install bcrypt
